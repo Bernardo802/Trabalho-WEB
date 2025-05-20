@@ -1,119 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Produtos</title>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
 
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-			box-sizing: border-box;
-		}
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		body {
-			background-color: #121212;
-			color: #f0f0f0;
-			
-		}
+        body {
+            background-color: #121212;
+            color: #f0f0f0;
 
-		nav {
-			background-color: #0f0f0f;
-			border-bottom: 2px solid #ff003c;
-			padding: 15px 20px;
-			font-size: 1.8rem;
-			text-align: center;
-		}
+        }
 
-		nav a {
-			text-decoration: none;
-			color: #f0f0f0;
-			margin: 0 20px;
-			font-weight: bold;
-			transition: color 0.3s ease;
-		}
+        nav {
+            background-color: #0f0f0f;
+            border-bottom: 2px solid #ff003c;
+            padding: 15px 20px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
 
-		nav a:hover {
-			color: #ff003c;
-		}
+        nav a {
+            text-decoration: none;
+            color: #f0f0f0;
+            margin: 0 20px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
 
-		.container {
-			padding: 40px 20px;
-			max-width: 1200px;
-			margin: 0 auto;
-		}
+        nav a:hover {
+            color: #ff003c;
+        }
 
-		h1 {
-			
-			font-size: 3rem;
-			color: #ff003c;
-			text-align: center;
-			margin-bottom: 40px;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-		}
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
-		.produtos {
-			display: grid;
-			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-			gap: 30px;
-		}
+        h1 {
 
-		.produto {
-			background-color: #1e1e1e;
-			border: 2px solid #ff003c;
-			border-radius: 10px;
-			padding: 20px;
-			text-align: center;
-			transition: transform 0.3s ease, border-color 0.3s ease;
-		}
+            font-size: 3rem;
+            color: #ff003c;
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
 
-		.produto:hover {
-			transform: scale(1.03);
-			border-color: white;
-		}
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
 
-		.produto img {
-			width: 100%;
-			border-radius: 5px;
-			margin-bottom: 15px;
-		}
+        .produto {
+            background-color: #1e1e1e;
+            border: 2px solid #ff003c;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
 
-		.produto h2 {
-			font-size: 1.5rem;
-			margin-bottom: 10px;
-			
-		}
+        .produto:hover {
+            transform: scale(1.03);
+            border-color: white;
+        }
 
-		.produto p {
-			font-size: 1rem;
-			color: #ccc;
-		}
-	</style>
+        .produto img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .produto h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+
+        }
+
+        .produto p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+    </style>
 </head>
-<body>
-	<nav>
-		<a href="index.html">Home</a>
-		<a href="produtos.html">Produtos</a>
-		<a href="sobre-nos.html">Sobre Nós</a>
-		<a href="contatos.html">Contatos</a>
-	</nav>
 
-	<div class="container">
-		<h1>Nossos Produtos</h1>
-		<div class="produtos">
-			<div class="produto">
-				<img src="imagens/produto1.jpg" alt="Produto 1">
-				<h2>Moletom Skull</h2>
-				<p>Estampa brutal, tecido premium e estilo pra dominar a rua.</p>
-			</div>
-			<div class="produto">
-				<img src="imagens/produto2.jpg" alt="Produto 2">
-				<h2>Camiseta Chaos</h2>
-				<p>Design original com pegada punk e urbana.</p>
-			</div>
-			<!-- Adicione mais produtos conforme necessário -->
-		</div>
-	</div>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="sobre-nos.html">Sobre Nós</a>
+        <a href="contatos.html">Contatos</a>
+    </nav>
+
+    <div class="container">
+        <h1>Nossos Produtos</h1>
+        <div class="produtos">
+            <div class="produto">
+                <img src="Assets/moletom.png" alt="Moletom Capuz Oversized - Against">
+                <h2>Moletom Capuz Oversized - Against</h2>
+                <p>Estampa brutal, tecido premium e estilo pra dominar a rua.</p>
+            </div>
+            <div class="produto">
+                <img src="Assets/camisa.png" alt="Camiseta - Dark Goat Remember">
+                <h2>Camiseta - Dark Goat Remember</h2>
+                <p>Design original com pegada punk e urbana.</p>
+            </div>
+            <div class="produto">
+                <img src="Assets/regata.png" alt="Regata - Ask">
+                <h2>Regata - Ask</h2>
+                <p>A essência do oculto estampada no peito</p>
+            </div>
+        </div>
+    </div>
+<!-- Adicione mais produtos conforme necessário -->
+    </div>
+    </div>
 </body>
+
 </html>
