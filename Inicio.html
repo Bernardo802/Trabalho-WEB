@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Brutal Kill Store</title>
+	<link rel="shortcut icon" href="Assets/faviconbrutalkill.png"> 
 	<style>
+		
+		/* https://www.google.com/s2/favicons?domain=www.brutalkill.com.br - icone brutal kill */
+
 		* {
 			margin: 0;
 			padding: 0;
@@ -29,11 +34,17 @@
 			margin: 0 20px;
 			font-weight: bold;
 			font-size: 1.5rem;
-			transition: color 0.3s ease;
+			transition: color 0.3s ease, transform 0.3s ease;
+			transform-style: preserve-3d;
+			display: inline-block;
+
+			/* https://prismic.io/blog/css-hover-effects - efeito 180 graus */
 		}
 
 		nav a:hover {
 			color: #ff003c;
+			transform: rotateY(180deg);
+
 		}
 
 		.hero {
@@ -109,17 +120,19 @@ text-align: center;
 	</style>
 </head>
 <body>
+	<header>
 	<nav>
-		<a href="index.html">Inicio</a>
-		<a href="produtos.html">Produtos</a>
-		<a href="sobre-nos.html">Sobre Nós</a>
-		<a href="contatos.html">Contatos</a>
+		<a href="Inicio.html">INÍCIO</a>
+		<a href="produtos.html">PRODUTOS</a>
+		<a href="sobre-nos.html">SOBRE NÓS</a>
+		<a href="contatos.html">CONTATOS</a>
 	</nav>
+	</header>
 
 	<section class="hero">
 		<div>
 			<h1>BRUTAL KILL</h1>
-			<p>Moda de rua com atitude. blablabla.</p>
+			<p>Moda de rua com atitude.</p>
 		</div>
 	</section>
 
@@ -129,7 +142,7 @@ text-align: center;
 <footer class="rodape">
     <div>
             <h2>Bem-vindo à nova era</h2>
-            <p>texto foda aqui.</p>
+            <p>Technology by: GarBeRi</p>
         </div>
     </footer>
 </body>
