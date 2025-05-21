@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Contatos</title>
-
+	<link rel="shortcut icon" href="Assets/faviconbrutalkill.png">
 	<style>
 		* {
 			margin: 0;
@@ -13,13 +13,13 @@
 		}
 
 		body {
-			background-color: #0f0f0f;
+			background-color: #111;
 			color: #f0f0f0;
 
 		}
 
 		nav {
-			background-color: #0f0f0f;
+			background-color: #000;
 			border-bottom: 2px solid #ff003c;
 			padding: 15px 20px;
 			font-size: 1.8rem;
@@ -28,14 +28,22 @@
 
 		nav a {
 			text-decoration: none;
-			color: #f0f0f0;
+			color: #eee;
 			margin: 0 20px;
 			font-weight: bold;
-			transition: color 0.3s ease;
+			font-size: 1.5rem;
+			transition: color 0.3s ease, transform 0.3s ease;
+			transform-style: preserve-3d;
+			display: inline-block;
+
+			/* https://prismic.io/blog/css-hover-effects - efeito 180 graus */
 		}
 
 		nav a:hover {
 			color: #ff003c;
+			transform: rotateY(180deg);
+			text-decoration: none;
+
 		}
 
 		.container {
@@ -93,17 +101,18 @@
 			color: red;
 			text-align: center;
 		}
+
 	</style>
 </head>
-
-<body>
+	<header>
 	<nav>
-		<a href="Inicio.html">Inicio</a>
-		<a href="produtos.html">Produtos</a>
-		<a href="sobre-nos.html">Sobre Nós</a>
-		<a href="contatos.html">Contatos</a>
+		<a href="Inicio.html">INICIO</a>
+		<a href="produtos.html">PRODUTOS</a>
+		<a href="sobre-nos.html">SOBRE NÓS</a>
+		<a href="contatos.html">CONTATOS</a>
 	</nav>
-
+	</header>
+<body>
 	<div class="container">
 		<img src="Assets/Logo.png" alt="Logo da Brutalkill" class="logo">
 		<h1>Entre em Contato</h1>
