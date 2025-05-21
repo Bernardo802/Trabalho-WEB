@@ -2,8 +2,8 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
+    <link rel="shortcut icon" href="Assets/faviconbrutalkill.png">
     <style>
         * {
             margin: 0;
@@ -12,30 +12,37 @@
         }
 
         body {
-            background-color: #121212;
+            background-color: #111;
             color: #f0f0f0;
 
         }
 
         nav {
-            background-color: #0f0f0f;
+            background-color: #000;
             border-bottom: 2px solid #ff003c;
             padding: 15px 20px;
             font-size: 1.8rem;
             text-align: center;
         }
 
-        nav a {
-            text-decoration: none;
-            color: #f0f0f0;
-            margin: 0 20px;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
+		nav a {
+			text-decoration: none;
+			color: #eee;
+			margin: 0 20px;
+			font-weight: bold;
+			font-size: 1.5rem;
+			transition: color 0.3s ease, transform 0.3s ease;
+			transform-style: preserve-3d;
+			display: inline-block;
 
-        nav a:hover {
-            color: #ff003c;
-        }
+			/* https://prismic.io/blog/css-hover-effects - efeito 180 graus */
+		}
+
+		nav a:hover {
+			color: #ff003c;
+			transform: rotateY(180deg);
+
+		}
 
         .container {
             padding: 40px 20px;
@@ -97,10 +104,10 @@ text-align: center;
 
 <body>
     <nav>
-        <a href="inicio.html">Inicio</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="sobre-nos.html">Sobre Nós</a>
-        <a href="contatos.html">Contatos</a>
+        <a href="inicio.html">INÍCIO</a>
+        <a href="produtos.html">PRODUTOS</a>
+        <a href="sobre-nos.html">SOBRE NÓS</a>
+        <a href="contatos.html">CONTATOS</a>
     </nav>
 
     <div class="container">
