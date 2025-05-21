@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sobre Nós - Brutal Kill</title>
+    <link rel="shortcut icon" href="Assets/faviconbrutalkill.png">
 
     <style>
         * {
@@ -26,18 +27,24 @@
             border-bottom: 2px solid #ff003c;
         }
 
-        nav a {
-            text-decoration: none;
-            color: #eee;
-            margin: 0 20px;
-            font-weight: bold;
-            font-size: 1.5rem;
-            transition: color 0.3s ease;
-        }
+		nav a {
+			text-decoration: none;
+			color: #eee;
+			margin: 0 20px;
+			font-weight: bold;
+			font-size: 1.5rem;
+			transition: color 0.3s ease, transform 0.3s ease;
+			transform-style: preserve-3d;
+			display: inline-block;
 
-        nav a:hover {
-            color: #ff003c;
-        }
+			/* https://prismic.io/blog/css-hover-effects - efeito 180 graus */
+		}
+
+		nav a:hover {
+			color: #ff003c;
+			transform: rotateY(180deg);
+
+		}
 
         .container {
             max-width: 1000px;
@@ -88,10 +95,10 @@
 
 <body>
     <nav>
-        <a href="Inicio.html">Inicio</a>
-        <a href="produtos.html">Produtos</a>
-        <a href="sobre-nos.html">Sobre Nós</a>
-        <a href="contatos.html">Contatos</a>
+        <a href="Inicio.html">INÍCIO</a>
+        <a href="produtos.html">PRODUTOS</a>
+        <a href="sobre-nos.html">SOBRE NÓS</a>
+        <a href="contatos.html">CONTATOS</a>
     </nav>
 
     <div class="container">
@@ -117,7 +124,7 @@
     <footer class="rodape">
         <div>
             <h2>Bem-vindo à nova era</h2>
-            <p>texto foda aqui.</p>
+            <p>Technology By: GarBeRi</p>
         </div>
     </footer>
 </body>
