@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+    <link rel="shortcut icon" href="Assets/faviconbrutalkill.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #111;
+            color: #f0f0f0;
+
+        }
+
+        nav {
+            background-color: #000;
+            border-bottom: 2px solid #ff003c;
+            padding: 15px 20px;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #eee;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+
+            /* https://prismic.io/blog/css-hover-effects - efeito 180 graus */
+        }
+
+        nav a:hover {
+            color: #ff003c;
+            transform: rotateY(360deg);
+
+        }
+
+        .container {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+
+            font-size: 3rem;
+            color: #ff003c;
+            text-align: center;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            /* mantém os produtos horizontalmente / repete os valores para as colunas (no caso, 3)
+            valores = 250px e 1fr (fração de espaço) / autofit - ajusta automaticamente o número de colunas disponível para ser visualizado na tela */
+            gap: 30px;
+        }
+
+        .produto {
+            background-color: #1e1e1e;
+            border: 2px solid #ff003c;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .produto:hover {
+            transform: scale(1.03);
+            border-color: white;
+        }
+
+        .produto img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .produto h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+
+        }
+
+        .rodape {
+            text-align: center;
+            background-color: black;
+            padding: 50px;
+            color: red;
+            margin-top: 160px;
+        }
+
+        .rodape p,
+        h2 {
+
+            color: red;
+            text-align: center;
+        }
+
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 30vh;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        img {
+            margin: 75px 25px;
+            border: solid;
+            color: #ff003c;
+            border-radius: 25px;
+        }
+
+        .direita {
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+        }
+
+        .texto {
+            font-size: 20px;
+            text-align: left;
+        }
+
+        .preco {
+            font-size: 35px;
+            border-top: 350px;
+        }
+
+        button {
+            background-color: #ff003c;
+            color: white;
+            border: solid;
+            border-color: rgb(112, 13, 13);
+            border-radius: 5px;
+            height: 55px;
+            width: 350px;
+            cursor: pointer;
+            font-size: 25px;
+         }
+
+         button:hover {
+            background-color: rgb(94, 6, 6);
+         }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="Inicio.html">INÍCIO</a>
+            <a href="produtos.html">PRODUTOS</a>
+            <a href="sobre-nos.html">SOBRE NÓS</a>
+            <a href="contatos.html">CONTATOS</a>
+        </nav>
+    </header>
+    <section>
+        <div class="esquerda">
+            <img src="Assets/moletom.png" alt="moletom">
+        </div>
+        <div class="direita">
+            <h1>Moletom Capuz Oversized - Against</h1>
+            <p class="texto">Blusa Moletom Oversized Com Capuz Brutal Kill Clothing. <br>
+                Costura reforçada nos ombros, reforço na gola (a cor do viés do reforço da gola pode sofrer alterações
+                de acordo com a reposição do produto). <br>
+                Cordão para ajuste do gorro. <br>
+                Bolsos nas laterais. <br>
+                Forro no capuz 100% algodão, podendo haver alteração de cor; <br>
+                Composição: Moletom 3 cabos 50% Algodão - 50% Poliéster. <br>
+                ENTENDA sobre nossos moletons: <br>
+                Como descrito no ícone acima o moletom 2 cabos, é um moletom MAIS QUENTE,possui FELPA INTERNA, com toque <br>
+                aveludado, perfeito para temperaturas mais baixas; <br>
+                Cor predominante: Preto. <br></p>
+
+                <h2 class="preco">R$189,99</h2>
+
+                <button type="button">COMPRAR</button>
+        </div>
+
+    </section>
+    <footer class="rodape">
+        <p>&copy; 2025 Brutal Kill. Todos os direitos reservados.</p>
+    </footer>
+    </div>
+</body>
+
+</html>
