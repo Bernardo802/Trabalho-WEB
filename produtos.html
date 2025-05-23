@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <title>Produtos</title>
@@ -25,24 +26,23 @@
             text-align: center;
         }
 
-		nav a {
-			text-decoration: none;
-			color: #eee;
-			margin: 0 20px;
-			font-weight: bold;
-			font-size: 1.5rem;
-			transition: color 0.3s ease, transform 0.3s ease;
-			transform-style: preserve-3d;
-			display: inline-block;
+        nav a {
+            text-decoration: none;
+            color: #eee;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
 
-			/* https://prismic.io/blog/css-hover-effects - efeito 180 graus */
-		}
+            /* https://prismic.io/blog/css-hover-effects - efeito 180 graus */
+        }
 
-		nav a:hover {
-			color: #ff003c;
-			transform: rotateY(180deg);
+        nav a:hover {
+            color: #ff003c;
+            transform: rotateY(180deg);
 
-		}
+        }
 
         .container {
             padding: 40px 20px;
@@ -63,6 +63,8 @@
         .produtos {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            /* mantém os produtos horizontalmente / repete os valores para as colunas (no caso, 3)
+            valores = 250px e 1fr (fração de espaço) / autofit - ajusta automaticamente o número de colunas disponível para ser visualizado na tela */
             gap: 30px;
         }
 
@@ -92,43 +94,52 @@
 
         }
 
-      
+        .rodape {
+            text-align: center;
+            background-color: black;
+            padding: 50px;
+            color: red;
+            margin-top: 160px;
+        }
 
-.rodape p, .rodape h2 {
+        .rodape p,
+        h2 {
 
-color: red;
-text-align: center;
-}
-.content-wrap {
-			flex: 1;
+            color: red;
+            text-align: center;
+        }
 
-		}
+        .page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 30vh;
+        }
 
-		.page-container {
-			display: flex;
-			flex-direction: column;
-			min-height: 20vh;
-		}
+        a {
+            text-decoration: none;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
     <header>
-    <nav>
-        <a href="Inicio.html">INÍCIO</a>
-        <a href="produtos.html">PRODUTOS</a>
-        <a href="sobre-nos.html">SOBRE NÓS</a>
-        <a href="contatos.html">CONTATOS</a>
-    </nav>
-</header>
-
+        <nav>
+            <a href="Inicio.html">INÍCIO</a>
+            <a href="produtos.html">PRODUTOS</a>
+            <a href="sobre-nos.html">SOBRE NÓS</a>
+            <a href="contatos.html">CONTATOS</a>
+        </nav>
+    </header>
     <div class="container">
         <h1>Nossos Produtos</h1>
         <div class="produtos">
             <div class="produto">
-                <img src="Assets/moletom.png" alt="Moletom Capuz Oversized - Against">
-                <h2>Moletom Capuz Oversized - Against</h2>
-                <p>Estampa brutal, tecido premium e estilo pra dominar a rua.</p>
+                <a href="moletom.html">
+                    <img src="Assets/moletom.png" alt="Moletom Capuz Oversized - Against">
+                    <h2>Moletom Capuz Oversized - Against</h2>
+                    <p>Estampa brutal, tecido premium e estilo pra dominar a rua.</p>
+                </a>
             </div>
             <div class="produto">
                 <img src="Assets/camisa.png" alt="Camiseta - Dark Goat Remember">
@@ -142,14 +153,11 @@ text-align: center;
             </div>
         </div>
     </div>
-    <div class="page-container">
-		<div class="content-wrap">
-		</div>
-		<footer class="rodape">
-			<h2>Bem-vindo à nova era</h2>
-			<p>Technology by: GarBeri</p>
-		</footer>
 
-    
+    <footer class="rodape">
+        <p>&copy; 2025 Brutal Kill. Todos os direitos reservados.</p>
+    </footer>
+    </div>
 </body>
+
 </html>
